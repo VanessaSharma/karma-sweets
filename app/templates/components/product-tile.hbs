@@ -1,7 +1,3 @@
 <li>
-  {{product.name}} from {{product.shopName}}
-
-  {{update-product product=product update="update"}}
-  <button {{action 'delete' product}}>Delete Product</button>
-
+  {{#link-to 'product' product.id}}{{product.name}} from {{product.shopName}} {{/link-to}}
 </li>
