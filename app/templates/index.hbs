@@ -2,6 +2,11 @@
 
 <h3>The sweetest part of your day!</h3>
 
+<ul>
+  {{#each model as |product|}}
+  <li>{{product.name}} from {{product.shopName}}</li>
+  {{/each}}
+</ul>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
