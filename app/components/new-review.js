@@ -10,7 +10,8 @@ export default Ember.Component.extend({
      var params = {
        customer: this.get('customer'),
        rating: this.get('rating'),
-       content: this.get('content')
+       content: this.get('content'),
+       product: this.get('product')
      };
      this.set('addNewReview', false);
      this.sendAction('saveReview', params);

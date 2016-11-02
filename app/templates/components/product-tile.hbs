@@ -1,3 +1,25 @@
-<li>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+       <div class= "well" id="productBody">
+          {{#link-to 'product' product.id}}
+         <h1>{{product.name}}</h1>
+         <h3>({{product.type}})</h3>
+         <p>{{product.description}}</p>
+         <p>Sold By: {{product.shopName}}</p>
+         <p>Tags: {{product.specialDiet}}</p>
+         <p>$ {{product.price}}</p>
+         <li><img src="{{product.image}}"></li>
+         <h5>{{product.review}} stars</h5>
+         {{/link-to}}<br>
+         <li>{{update-product product=product update="update"}}<button {{action 'delete' product}}>Delete</button></li>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <li>
   {{#link-to 'product' product.id}}{{product.name}} from {{product.shopName}} {{/link-to}}
-</li>
+</li> -->

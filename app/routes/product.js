@@ -17,6 +17,19 @@ export default Ember.Route.extend({
     destroyProduct(product) {
       product.destroyRecord();
       this.transitionTo('index');
+    },
+    saveReview(params) {
+      var newReview = this.store.createRecord('review', params);
+      var product = params.product;
+      product.get('reviews').addObject(newReview);
+      newReview.save().then(function() {
+        return product.save();
+    });
+      this.transitionTo('product', product);
+    },
+    destroyReview(review) {
+      review.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });

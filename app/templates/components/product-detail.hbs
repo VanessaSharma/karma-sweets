@@ -1,3 +1,23 @@
-<h1>placeholder</h1>
-(more info about product)
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="well">
+          <h2>Product Reviews</h2>
+          <ul>
+            {{#each product.reviews as |review|}}
+              {{review-tile review=review destroyComment="destroyComment" update="update"}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- <h2>Product Reviews</h2>
+<ul>
+  {{#each product.reviews as |review|}}
+    {{review-tile review=review destroyReview="destroyReview"}}
+  {{/each}}
+</ul> -->
+
 <button {{action 'delete' product}}>Delete</button>

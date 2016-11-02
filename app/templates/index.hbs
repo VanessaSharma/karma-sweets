@@ -3,23 +3,23 @@
 <h3>The sweetest part of your day!</h3>
 
 <ul>
-  {{#each model as |product|}}
-  {{product-tile product=product}}
+  {{#each model.products as |product|}}
+  {{product-tile product=product update="update" destroyProduct="destroyProduct"}}
   {{/each}}
 </ul>
 
-{{new-product saveProduct2="saveProduct3"}}
+<!-- {{new-product saveProduct2="saveProduct3"}}
 
 <h2>Product Reviews</h2>
 <ul>
   {{#each model.reviews as |review|}}
   <li>{{review.rating}} - {{review.content}} - by {{review.customer}}</li>
   {{/each}}
-</ul>
+</ul> -->
 
-{{new-review saveReview="saveReview"}}
+{{new-product saveProduct2="saveProduct3"}}
 
-<hr>
+<!-- <hr>
 
 {{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Contact Us{{/link-to}}
+{{#link-to 'contact'}}Contact Us{{/link-to}} -->

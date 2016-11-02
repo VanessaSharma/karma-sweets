@@ -1,4 +1,30 @@
-<h1>Placeholder {{model.name}} {{model.shopName}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+       <div class= "well" id="productBody">
+         <h1>{{model.name}}</h1>
+         <h3>({{model.type}})</h3>
+         <p>{{model.description}}</p>
+         <p>Sold By: {{model.shopName}}</p>
+         <p>Tags: {{model.specialDiet}}</p>
+         <p>$ {{model.price}}</p>
+         <p><img src="{{model.image}}"></p>
+         <h5>{{model.review}} stars</h5>
+         <button {{action 'delete' product}}>Delete</button>
+         {{update-product product=model update="update"}}
+       </div>
+    </div>
+  </div>
+</div>
+
+{{new-review saveReview="saveReview" product=model destroyReview='destroyReview' update='update'}}
+<br>
+{{product-detail product=model destroyPost="destroyPost" destroyReview="destroyReview" update="update"}}
+
+<!-- <h1>Placeholder {{model.name}} {{model.shopName}}</h1>
 
 {{update-product product=model update="update"}}
-{{product-detail product=model destroyProduct="destroyProduct"}}
+
+{{product-detail product=model destroyProduct="destroyProduct" destroyReview="destroyReview"}}
+
+{{new-review saveReview="saveReview" product=model}} -->
