@@ -7,5 +7,6 @@ export default DS.Model.extend({
   shopName: DS.attr(),
   specialDiet: DS.attr(),
   price: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  reviews: DS.hasMany('review', {async: true})
 });
