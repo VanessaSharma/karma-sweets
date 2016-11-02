@@ -1,0 +1,45 @@
+{{#if addNewProduct}}
+<h1>List New Product</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input value=name id="name"}}
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type</label>
+      {{input value=type id="type"}}
+    </div>
+
+    <div class="form-group">
+      <label for="description">City</label>
+      {{input value=description id="description"}}
+    </div>
+
+    <div class="form-group">
+      <label for="shopName">Your Business Name</label>
+      {{input value=shopName id="shopName"}}
+    </div>
+
+    <div class="form-group">
+      <label for="specialDiet">Special Diet Tags</label>
+      {{input value=specialDiet id="specialDiet"}}
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      {{input value=price id="price"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <button {{action 'saveProduct1'}}>Save</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'productFormShow'}}>New Product</button>
+{{/if}}

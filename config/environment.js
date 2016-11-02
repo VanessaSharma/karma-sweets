@@ -16,6 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyD_Kkc_NHzOOOG8MaqUWjQiTynkR5EbC5c",
+      authDomain: "karma-sweets.firebaseapp.com",
+      databaseURL: "https://karma-sweets.firebaseio.com",
+      storageBucket: "karma-sweets.appspot.com",
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

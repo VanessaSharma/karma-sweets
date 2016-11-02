@@ -4,9 +4,11 @@
 
 <ul>
   {{#each model as |product|}}
-  <li>{{product.name}} from {{product.shopName}}</li>
+  {{product-tile product=product destroyProduct="destroyProduct"}}
   {{/each}}
 </ul>
+
+{{new-product saveProduct2="saveProduct3"}}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
