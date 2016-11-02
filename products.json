@@ -22,5 +22,18 @@
 "specialDiet": "Vegetarian",
 "price": 2.50,
 "image": "http://www.m5zn.com/newuploads/2015/11/12/jpg//5746789efaf6667.jpg"
-  }]
+  }],
+  "reviews": [{
+    "customer": "Vanessa Sharma",
+    "rating": "⭐⭐⭐⭐",
+    "content": "This was the tastiest cupcake I have ever had! My party guests really enjoyed them! Thank you!"
+  }, {
+    "customer": "Shelby Clayton",
+    "rating": "⭐",
+    "content": "Super bland. Never buying from this shop again."
+  }, {
+    "customer": "Halle Williams",
+    "rating": "⭐⭐⭐⭐⭐",
+    "content": "Very good flavor."
+    }]
 }

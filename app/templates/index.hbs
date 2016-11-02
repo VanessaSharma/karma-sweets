@@ -10,5 +10,16 @@
 
 {{new-product saveProduct2="saveProduct3"}}
 
+<h2>Product Reviews</h2>
+<ul>
+  {{#each model.reviews as |review|}}
+  <li>{{review.rating}} - {{review.content}} - by {{review.customer}}</li>
+  {{/each}}
+</ul>
+
+{{new-review saveReview="saveReview"}}
+
+<hr>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact Us{{/link-to}}
