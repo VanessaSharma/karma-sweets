@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       });
       product.save();
-      this.transitionTo('index');
+      this.reload();
     },
     destroyProduct(product) {
       product.destroyRecord();
@@ -27,9 +27,9 @@ export default Ember.Route.extend({
     });
       this.transitionTo('product', product);
     },
-    destroyReview(review) {
+    destroyReview(review, product) {
       review.destroyRecord();
-      this.transitionTo('index');
+      this.transitionTo('product', product);
     }
   }
 });

@@ -1,6 +1,6 @@
 <div class="well" id="reviews">
   <div class="well" id="reviewWell">
-    <h8>{{review.content}}<br> - by {{review.customer}}</h8>
+    <h8>{{review.content}}<br>{{review.rating}} - by {{review.customer}}</h8>
   </div>
   {{update-review review=review update="update"}}
   <button id="delButton" {{action 'delete' review}}>Delete Review</button>

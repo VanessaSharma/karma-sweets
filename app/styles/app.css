@@ -32,14 +32,14 @@ h1 {
   font-size: 70px;
   text-decoration: underline;
   text-align: center;
-  font-family: 'Passion One', cursive;
+  font-family: 'Satisfy', cursive;
 }
 
 h2 {
   font-size: 43px;
   text-decoration: underline;
   text-align: center;
-  font-family: 'Passion One', cursive;
+  font-family: 'Satisfy', cursive;
 }
 
 h5 {
@@ -50,13 +50,13 @@ h5 {
 h7 {
   font-size: 80px;
   color: white;
-  font-family: 'Passion One', cursive;
+  font-family: 'Satisfy', cursive;
 }
 
 h8 {
   font-size: 20px;
-  color: white;
-  text-shadow: 2px 2px black;
+  color: black;
+  /*text-shadow: 2px 2px black;*/
   font-family: 'Dosis', sans-serif;
 }
 
@@ -74,11 +74,11 @@ h6 {
 
 button {
   width: 90px;
-  height: 35px;
+  height: 42px;
   margin-top: 10px;
   border-radius: 7px;
-  background-color: #182d4f;
-  color: lightgrey;
+  background-color: #42A0D5;
+  color: black;
 }
 
 .navButtons a {
@@ -86,8 +86,8 @@ button {
   height: 35px;
   margin-top: 10px;
   border-radius: 7px;
-  background-color: #182d4f;
-  color: lightgrey !important;
+  background-color: #42A0D5;
+  color: black !important;
 }
 
 a:hover{
@@ -104,16 +104,16 @@ a {
   height: 50px;
   margin-top: 10px;
   border-radius: 7px;
-  background-color: #182d4f;
-  color: lightgrey;
+  background-color: #42A0D5;
+  color: black;
   display: inline;
 }
 
-#comments{
-  background-image: url("http://www.hdwallpapery.com/static/images/black-background-ppt-backgrounds-powerpoint_8WuVMv9.jpg");
+#reviews{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/44/ea/f5/44eaf52c15097e7dc5c9d68723b7ad02.jpg");
 }
 
-#commentWell {
-  background-color: #3e55b2;
+#reviewWell {
+  background-color: #white;
   border-width: medium;
 }
